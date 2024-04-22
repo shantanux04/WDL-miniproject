@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOY PARK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="C:\Users\rogst\OneDrive\Documents\Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+    <style>
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+    </style>
+    <div class="banner">
+        <div class="navbar">
+            <img src="C:\Users\rogst\OneDrive\Documents\logo.png" class="logo">
+            <ul>
+                <li><a href="D:\WDL project HTML\Login page\.vscode\home.html">HOME</a></li>
+                <li><a href="D:\WDL project HTML\Login page\.vscode\login.html">login</a></li>
+                <li><a href="D:\WDL project HTML\Login page\.vscode\register-page.html">Register</a></li>
+                <li><a href="D:\WDL project HTML\Login page\.vscode\feedback.html">Feedback</a></li>
+                <li><a href="D:\WDL project HTML\Login page\.vscode\location.html">about us</a></li>
+                
+            </ul> 
+        </div>
+        <div class="content">
+            <h1>WELCOME TO JOLLY LAND</h1>
+            <p>Unique indoor & outdoor rides & shows make this India's favourite themed entertainment destination.</p>
+        </div>
+        <div class="button-container">
+         <a href="D:\WDL project HTML\Login page\.vscode\price.html">  <button type="submit"  class="button" >VIEW Packages</button></a>
+            
+         <a href="D:\WDL project HTML\Login page\.vscode\more.html">  <button type="submit"  class="button" >Explore</button></a>
+        
+        </div>
+
+        
+
+       
+    </div>
+    <style>*{
+        margin: 0;
+        padding: 0;
+    font-family: sans-serif;
+    }
+    
+    .banner{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-image: url(1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .navbar{
+        width:85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        width: 120px;
+        cursor: pointer;
+        position: relative;
+        left: -100px;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .navbar ul li {
+        margin-right: 40px;
+        margin-top: -15px; 
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff; /* Changed color to white */
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .navbar ul li a::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .navbar ul li a:hover::after {
+        width: 100%;
+    }
+    
+    .content{
+        width:100%;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        text-align:center;
+        color: #fff;
+    }
+    
+    .content h1{
+        font-size: 70px;
+        margin-top: 80px;
+    
+    }
+    .content p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    
+    .button-container {
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .button {
+        display: inline-block;
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .button span {
+        background: #f1d0b0;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    .button:hover {
+        background-color: #33cccc;  
+    }
+    
+    .button:hover span {
+        width: 100%;
+        background-color: #33cccc; 
+    }
+    
+    .button:hover {
+        border: none;
+    }
+    .break-line {
+        border-top: 1px solid #fff; 
+        margin: 1px 0;
+    }
+    .break-line-container {
+        position: relative; 
+        width: 100%; 
+        height: 1000px;
+    }
+    
+    .break-line-container::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 10px; 
+        background-color: #356da4; 
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }</style>
+</body>
+</html>
